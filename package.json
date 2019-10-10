@@ -6,12 +6,17 @@
   "author": "SH Kim",
   "license": "MIT",
   "dependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/node": "^7.6.3",
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "eslint": "^6.5.1"
+    "@babel/preset-env": "^7.6.3",
+    "eslint": "^6.5.1",
+    "nodemon": "^1.19.3"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon --exec babel-node index.js "
   }
 }
